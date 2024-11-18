@@ -7,10 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>loan_proposals</artifactId>
+    <artifactId>api-gateway</artifactId>
     <packaging>jar</packaging>
 
-    <name>loan_proposals</name>
+    <name>api-gateway</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -19,16 +19,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <version>4.1.4</version>
         </dependency>
     </dependencies>
 </project>
